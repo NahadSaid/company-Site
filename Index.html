@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nahad Digital Solutions</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body>
+
+<!-- PARTICLES BACKGROUND -->
+<div id="particles-js"></div>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/255679123651" class="whatsapp">💬</a>
+
+<!-- NAVBAR -->
+<header>
+  <div class="logo">
+    <img src="Images/logo.png" alt="Logo">
+   
+  </div>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <nav>
+    <ul id="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <button onclick="toggleTheme()">🌙</button>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-card">
+    <h1 id="typing"></h1>
+    <p>We create interactive, responsive, and 3D-inspired digital products for businesses.</p>
+    <a href="#services" class="btn">Explore Services</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Us</h2>
+  <p class="section-p">Nahad Digital Solutions is a passionate team dedicated to building modern, efficient, and visually stunning digital solutions. We help businesses grow through web development, UI/UX design, and custom business systems.</p>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="services-grid">
+    <div class="service-box">
+      <h3>Web Development</h3>
+      <p>We design and develop modern, fast, and secure websites that are mobile-friendly and optimized for growth.</p>
+    </div>
+    <div class="service-box">
+      <h3>Business Systems</h3>
+      <p>Custom systems for businesses to automate operations, manage customers, and track workflows efficiently.</p>
+    </div>
+    <div class="service-box">
+      <h3>UI/UX Design</h3>
+      <p>Clean, modern, and user-friendly interfaces designed to boost engagement and usability.</p>
+    </div>
+    <div class="service-box">
+      <h3>IT Consulting</h3>
+      <p>Expert guidance to improve your digital strategies, scale operations, and adopt the right technology.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+  <p class="section-p">Some of the projects and systems we have developed for businesses and organizations.</p>
+  <div class="projects-grid">
+    <div class="project-box"><img src="Images/sshoolmanagement.jpg.jpeg"><p>School System</p></div>
+    <div class="project-box"><img src="https://picsum.photos/401/300"><p>Inventory System</p></div>
+    <div class="project-box"><img src="Images/bussness.jpg.jpeg"><p>Business Website</p></div>
+  </div>
+  <div class="project-filters">
+    <button onclick="filterProjects('web')">Web</button>
+    <button onclick="filterProjects('system')">Systems</button>
+    <button onclick="filterProjects('all')">All</button>
+  </div>
+</section>
+
+<!-- STATS -->
+<section id="stats">
+  <h2>Our Impact</h2>
+  <div class="stats-grid">
+    <div class="stat-box"><h3 id="count1">0</h3><p>Projects</p></div>
+    <div class="stat-box"><h3 id="count2">0</h3><p>Clients</p></div>
+    <div class="stat-box"><h3 id="count3">0</h3><p>Years Experience</p></div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+  <h2>Pricing</h2>
+  <div class="pricing-grid">
+    <div class="pricing-box"><h3>Starter</h3><h2>$150</h2><p>Business Website</p></div>
+    <div class="pricing-box"><h3>Professional</h3><h2>$400</h2><p>Business System</p></div>
+    <div class="pricing-box"><h3>Enterprise</h3><h2>$900+</h2><p>Custom Software</p></div>
+  </div>
+</section>
+
+<!-- TEAM -->      
+<section id="team">
+  <h2>Team</h2>
+  <p class="section-p">Meet the people behind Nahad Digital Solutions, a passionate team dedicated to building powerful digital solutions.</p>
+  <div class="team-grid">
+    <div class="team-box"><img src="Images/developer.jpg.jpeg"><h4>Nahadi Said</h4><p>Founder & Developer</p></div>
+    <div class="team-box"><img src="Images/UXdesigner.jpg.jpeg"><h4>UI Designer</h4></div>
+    <div class="team-box"><img src="Images/developer.jpg.jpeg"><h4>Full Stack Developer</h4></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <h2>What Our Clients Say</h2>
+  <div class="testimonial-container">
+    <div class="testimonial"><img src="Images/client1.jpg.jpg"><p>Nahad Digital Solutions built our website and improved our online presence.</p><h4>— John Michael</h4></div>
+    <div class="testimonial"><img src="Images/client2.jpg.jpg"><p>Their inventory system helped us manage products easily.</p><h4>— Ally Hassan</h4></div>
+    <div class="testimonial"><img src="Images/client3.jpg.jpeg"><p>Professional developers with excellent support.</p><h4>— Amina Hassan</h4></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form>
+    <input type="text" placeholder="Name" required>
+    <input type="email" placeholder="Email" required>
+    <textarea rows="5" placeholder="Message"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>Email: nahadisaidi111@gmail.com</p>
+  <p>Phone: +255 679123651</p>
+  <p>© 2026 Nahad Digital Solutions</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

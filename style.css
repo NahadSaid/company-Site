@@ -1,0 +1,70 @@
+/* RESET */
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
+html{scroll-behavior:smooth;}
+body{background:#0f172a;color:white;overflow-x:hidden;transition:0.3s;}
+
+/* PARTICLES */
+#particles-js{position:fixed;width:100%;height:100%;top:0;left:0;z-index:-1;}
+
+/* NAVBAR */
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 10%;background:rgba(2,6,23,0.9);position:sticky;top:0;z-index:1000;backdrop-filter:blur(8px);}
+.logo img{width: 190px;margin-right:10px;border-radius:20px;vertical-align:middle;}
+.logo span{color:#38bdf8;font-weight:700;font-size:24px;vertical-align:middle;}
+nav ul{display:flex;gap:25px;}
+nav ul li a{color:white;font-weight:500;transition:.3s;}
+nav ul li a:hover{color:#38bdf8;}
+.menu-toggle{display:none;font-size:28px;cursor:pointer;color:white; width: 5px; border-radius: 5px;}
+@media(max-width:768px){
+  nav ul{display:none;position:absolute;top:70px;right:0;flex-direction:column;background:rgba(2,6,23,0.95);padding:20px;border-radius:10px;width:200px;}
+  nav ul.active{display:flex;}
+  .menu-toggle{display:block;}
+}
+
+/* HERO */
+.hero{height:100vh;display:flex;justify-content:center;align-items:center;text-align:center;perspective:1000px;position:relative;}
+.hero-card{background: rgba(255,255,255,0.05);border-radius: 20px;padding:60px;transform-style: preserve-3d;transition: transform 0.2s ease;backdrop-filter: blur(20px);}
+.hero-card:hover{transform: rotateY(10deg) rotateX(5deg);}
+.hero h1{font-size:60px;margin-bottom:20px;position:relative;z-index:1;}
+.hero p{max-width:700px;margin-bottom:30px;position:relative;z-index:1;font-size:20px;color:#ccc;}
+.btn{background:#38bdf8;padding:18px 45px;border-radius:35px;color:black;font-weight:700;position:relative;z-index:1;transition:.3s;}
+.btn:hover{transform:scale(1.1);background:white;}
+
+/* SECTIONS */
+section{padding:100px 10%;opacity:0;transform:translateY(40px);transition:1s;}
+section.show{opacity:1;transform:translateY(0);}
+h2{margin-bottom:50px;font-size:40px;color:#38bdf8;}
+.section-p{max-width:800px;margin:0 auto 30px;color:#ccc;font-size:18px;text-align:center;}
+
+/* GRIDS */
+.services-grid,.projects-grid,.stats-grid,.pricing-grid,.team-grid{display:grid;gap:35px;}
+.services-grid{grid-template-columns:repeat(auto-fit,minmax(280px,1fr));}
+.projects-grid{grid-template-columns:repeat(auto-fit,minmax(300px,1fr));}
+.stats-grid{grid-template-columns:repeat(auto-fit,minmax(180px,1fr));margin-top:50px;}
+.pricing-grid{grid-template-columns:repeat(auto-fit,minmax(280px,1fr));}
+.team-grid{grid-template-columns:repeat(auto-fit,minmax(200px,1fr));}
+
+/* BOXES GLASSMORPHISM */
+.service-box,.project-box,.stat-box,.pricing-box,.team-box,.testimonial{background: rgba(255,255,255,0.08);backdrop-filter: blur(15px);border-radius:20px;padding:25px;transition:all 0.4s ease;text-align:center;}
+.service-box:hover,.project-box:hover,.stat-box:hover,.pricing-box:hover,.team-box:hover{transform: translateY(-10px) scale(1.05);background: rgba(255,255,255,0.15);color:black;}
+.project-box img,.team-box img,.testimonial img{width:100%;border-radius:20px;transition:.5s;}
+.project-box:hover img,.team-box:hover img{transform:scale(1.1);}
+.testimonial{display:none;text-align:center;margin:20px auto;}
+.testimonial img{width:80px;height:80px;border-radius:50%;margin-bottom:15px;}
+.testimonial p{font-size:18px;color:#ccc;margin-bottom:10px;}
+
+/* CONTACT */
+form{max-width:550px;margin:auto;display:flex;flex-direction:column;gap:18px;}
+input,textarea{padding:15px;border:none;border-radius:10px;font-size:16px;}
+button{padding:15px;background:#38bdf8;border:none;font-weight:700;cursor:pointer;font-size:16px;}
+button:hover{transform:scale(1.05);background:white;transition:.3s;}
+
+/* FOOTER */
+footer{background:#020617;padding:50px;text-align:center;margin-top:50px;font-size:16px;color:#aaa;}
+
+/* WHATSAPP */
+.whatsapp{position:fixed;bottom:25px;right:25px;background:#25D366;color:white;font-size:28px;padding:18px;border-radius:50%;text-decoration:none;}
+
+/* LIGHT THEME */
+body.light{background:rgb(92, 87, 87);color:black;}
+body.light .btn{color:black;}
+body.light .service-box,.body.light .stat-box,.body.light .pricing-box,.body.light .team-box{background:#f1f1f1;color:black;}
